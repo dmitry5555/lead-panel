@@ -124,7 +124,7 @@ const LeadRow = ({ event }: { event: LeadEvent }) => {
 
   return (
     <div className="border-b border-[#E5E7EB] last:border-0 bg-[#F4F4EE] first:rounded-t-md last:rounded-b-md">
-        <div className="flex items-center px-8 py-4.5 bg-[#F4F4EE] ">
+        <div className="flex items-center px-8 py-5 bg-[#F4F4EE] ">
             {/* id */}
             <div className="w-1/12">{event.id.slice(0, 6)}</div>        
             
@@ -208,7 +208,7 @@ const LeadRow = ({ event }: { event: LeadEvent }) => {
                 expanded ? "max-h-64 opacity-100 border-t border-[#E5E7EB]" : "max-h-0 opacity-0"
             }`}
         >
-            <div className="px-8 pb-0 my-4 gap-0 flex flex-col w-full">
+            <div className="px-8 pb-0 my-5 gap-1 flex flex-col w-full">
             
                 <div className="flex flex-row flex-wrap items-center gap-2 text-sm">
                     <span className="rounded-full bg-[#EEEDE6] px-3 py-1.5">
