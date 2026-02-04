@@ -132,11 +132,12 @@ const LeadRow = ({ event }: { event: LeadEvent }) => {
             <div className="w-2/12">{dateLabel}</div>
             {/* camp.name */}
             <div className="w-4/12 flex items-center gap-2">
-                <img
-                  src="/yandex-logo-rus.png"
-                  alt="Yandex"
-                  className="size-5 self-center"
-                />
+                <span
+                  aria-hidden="true"
+                  className="inline-flex size-5 items-center justify-center rounded-full bg-red-600 opacity-80 text-[10px] font-semibold text-white"
+                >
+                  Я
+                </span>
                 <span className="leading-none">{utmCampaign}</span>
 
             </div>
