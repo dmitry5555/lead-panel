@@ -28,3 +28,9 @@
 ## Configuration & Security Notes
 - Environment-specific configuration should use standard Next.js patterns (for example, `.env.local`). Do not commit secrets.
 - If you add new configuration files, document them in this file and update `README.md` as needed.
+
+## Collaboration Rules
+- Only change the code that is explicitly requested. Do not modify unrelated code.
+- Before editing, propose solutions and ask clarifying questions if anything is unclear.
+- Prefer minimal, targeted changes that touch as little code as possible.
+- Look for existing implementations of similar tasks in the codebase and reuse their styles and patterns.

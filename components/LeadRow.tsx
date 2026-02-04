@@ -88,14 +88,16 @@ const LeadRow = () => {
             <button
             type="button"
             onClick={() => setExpanded((value) => !value)}
-            className="ml-auto cursor-pointer"
+            className="w-1/12 ml-auto cursor-pointer"
             >
             <span
-                className={`inline-block bg-slate-900/70 text-sm px-1.5 py-0.5 rounded-full text-white transition-transform ${
+                className={`inline-flex bg-slate-900/70 px-1 py-1 rounded-full text-white transition-transform ${
                 expanded ? "rotate-180" : ""
                 }`}
             >
-                ↓
+                <svg viewBox="0 0 20 20" aria-hidden="true" className="size-4" fill="currentColor">
+                    <path d="M5.5 7.5a1 1 0 0 1 1.4 0L10 10.6l3.1-3.1a1 1 0 1 1 1.4 1.4l-3.8 3.8a1 1 0 0 1-1.4 0l-3.8-3.8a1 1 0 0 1 0-1.4z" />
+                </svg>
             </span>
             </button>
 

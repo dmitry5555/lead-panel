@@ -9,6 +9,7 @@
 // FB Blue:   #1877F2
 
 import LeadRow from "@/components/LeadRow"
+import TrackEvent from "@/components/TrackEvent"
 
 export default function Home() {
   return (
@@ -17,14 +18,16 @@ export default function Home() {
       <div className="flex px-8 pt-8 pb-6 w-full font-medium text-slate-400 ">
         <div className="w-1/12">ID</div>
         <div className="w-2/12">Дата</div>
-        <div className="w-2/12">Camp.Name</div>
+        <div className="w-4/12">Camp.Name</div>
         <div className="w-2/12">Creat.ID</div>
         <div className="w-2/12">Статус</div>
+        <div className="w-1/12"></div>
       </div>
       <div className="rounded-md border border-[#F4F4EE]">
         <LeadRow />
         <LeadRow />
       </div>
+      <TrackEvent />
     </div>
     
   );
