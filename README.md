@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Notes
+
+- This project is intended for static hosting (e.g., GitHub Pages). Do not rely on Next.js API routes; they are not used.
+- Data updates happen directly from the client to Supabase REST using `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_*` keys.
+
 ## Getting Started
 
 First, run the development server:

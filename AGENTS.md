@@ -28,6 +28,8 @@
 ## Configuration & Security Notes
 - Environment-specific configuration should use standard Next.js patterns (for example, `.env.local`). Do not commit secrets.
 - If you add new configuration files, document them in this file and update `README.md` as needed.
+- This project is intended for static hosting (e.g., GitHub Pages). Do not rely on Next.js API routes; they are not used.
+- Data updates happen directly from the client to Supabase REST using `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_*` keys.
 
 ## Collaboration Rules
 - Only change the code that is explicitly requested. Do not modify unrelated code.

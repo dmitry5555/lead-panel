@@ -32,12 +32,15 @@ const TrackEvent = () => {
     //     setResult(`error: ${error}`);
     //   });
 
-    fetch(`${url}/rest/v1/events?select=id,created_at,url&order=created_at.desc`, {
+    fetch(
+      `${url}/rest/v1/events?select=id,created_at,url,status,comment&order=created_at.desc`,
+      {
       headers: {
         apikey: key,
         Authorization: `Bearer ${key}`,
       },
-    })
+      },
+    )
       .then((res) => res.json())
       .then((data) => {
         setEvents(JSON.stringify(data, null, 2));
